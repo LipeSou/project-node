@@ -26,4 +26,4 @@ app.use((err, request, response, next) => {
     });
 });
 dotenv_1.default.config();
-app.listen(3333, () => console.log("Servidor esta rodando!!!! :s:  💪 ( ͡⚈ ͜ʖ ͡⚈) 👊"));
+app.listen(process.env.PORT || 3333, () => console.log("Servidor esta rodando!!!! :s:  💪 ( ͡⚈ ͜ʖ ͡⚈) 👊"));
