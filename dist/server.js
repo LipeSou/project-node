@@ -25,5 +25,8 @@ app.use((err, request, response, next) => {
         message: `Internal server error - ${err.message}`,
     });
 });
+app.get("/", (request, response) => {
+    response.send("Olá mundo");
+});
 dotenv_1.default.config();
-app.listen(process.env.PORT || 3333, () => console.log("Servidor esta rodando!!!! :s:  💪 ( ͡⚈ ͜ʖ ͡⚈) 👊"));
+app.listen(process.env.PORT || 3333, () => console.log("Servidor esta rodando!!!! "));

@@ -29,8 +29,12 @@ app.use(
     });
   }
 );
+
+app.get("/", (request: Request, response: Response) => {
+  response.send("Olá mundo");
+});
 dotenv.config();
 
 app.listen(process.env.PORT || 3333, () =>
-  console.log("Servidor esta rodando!!!! :s:  💪 ( ͡⚈ ͜ʖ ͡⚈) 👊")
+  console.log("Servidor esta rodando!!!! ")
 );
